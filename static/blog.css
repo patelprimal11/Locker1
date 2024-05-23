@@ -1,0 +1,167 @@
+.about_img {
+
+    width: 1000px;
+    float: left;
+}
+
+.like_icon {
+    width: 100%;
+    float: left;
+    padding-left: 350px;
+    position: relative;
+    bottom: 30px;
+}
+
+.post_text {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: #afafae;
+    margin: 0px;
+}
+
+.most_text {
+    width: 100%;
+    float: left;
+    font-size: 32px;
+    color: #1a1a1a;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.lorem_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 0px;
+}
+
+.social_icon_main {
+    width: 100%;
+    display: flex;
+}
+
+.social_icon {
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social_icon li {
+    float: left;
+    padding-right: 10px;
+}
+
+.read_bt {
+    width: 150px;
+    float: right;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.read_bt a {
+    font-size: 18px;
+    color: #3810c6;
+    font-weight: 500;
+}
+
+.read_bt a:hover {
+    font-size: 18px;
+    color: #13b1d8;
+}
+
+.image_5 {
+    width: 100%;
+    float: left;
+}
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #222222;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.about_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 0px;
+}
+
+.read_bt_1 {
+    width: 150px;
+    float: left;
+    padding-top: 25px;
+}
+
+.read_bt_1 a {
+    font-size: 18px;
+    color: #090e42;
+    font-weight: 500;
+}
+
+.read_bt_1 a:hover {
+    color: #5c5d76;
+}
+
+.about_main {
+    width: 100%;
+    float: left;
+}
+
+.follow_text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e0a0d;
+    text-transform: uppercase;
+}
+
+.follow_text::after {
+    content: '';
+    position: absolute;
+    background-color: #0c1045;
+    width: 170px;
+    height: 2px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 10px;
+}
+
+.follow_icon {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 275px;
+}
+
+.follow_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.follow_icon li {
+    float: left;
+    padding: 0px 5px;
+}
+
+.active a {
+    color: red;
+}

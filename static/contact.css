@@ -1,0 +1,10 @@
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c2{
+    padding-left: 400px;
+    margin-left: 500px;
+}

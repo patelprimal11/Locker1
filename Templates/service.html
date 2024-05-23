@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Select and upload multiple files to the server</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2; /* Set background color */
+            background-image: url('background-image.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the background image */
+        }
+
+        /* Style the form container */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Set form background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        /* Style the form heading */
+        h2 {
+            margin-bottom: 20px;
+            text-align: center; /* Center the heading */
+        }
+
+        /* Style the file input and submit button */
+        input[type="file"] {
+            margin-bottom: 10px;
+            display: block; /* Make the file input full-width */
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            display: block; /* Make the submit button full-width */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the uploaded images and iframes */
+        img {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            max-width: 100px;
+        }
+
+        iframe {
+            display: block;
+            margin-bottom: 10px;
+            border: none;
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- multipart/form-data ensures that form
+	data is going to be encoded as MIME data -->
+    <form action="{% url "normalupload" %}" method="POST" enctype="multipart/form-data">
+
+        {% csrf_token %}
+
+        <h2>Upload Files</h2>
+
+        <p>
+            Select files to upload:
+
+            <!-- name of the input fields are going to
+				be used in our php script-->
+            <input type="file" name="file" multiple>
+
+            <br><br>
+
+            <input type="submit" name="submit" value="Upload">
+        </p>
+
+    </form>
+    <br>
+    <br>
+    {% for u in uploads %}
+    <image src="{{u.image}}" alt="" srcset="" width="20">
+        <iframe src="{{u.file}}" alt="">
+            {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Style the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Style the form heading */
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Style the file input and submit button */
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style the uploaded images and iframes */
+img {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 100px;
+}
+
+iframe {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    max-width: 100%;
+}
